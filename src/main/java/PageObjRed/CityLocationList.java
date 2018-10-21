@@ -27,7 +27,7 @@ public class CityLocationList extends GeneralMethods{
         List<String> lists = listCityesRUS();
         for (String element : lists) {
             driver.findElement(By.linkText(element)).click();
-            driver.findElement(By.xpath("//div[2]/div[2]/div/div[1]/div[3]/a[2]")).click();
+            driver.findElement(By.cssSelector("body > div.layout > div.header > div.line-second > div > div.line-1 > div.right.country-city.hasLangs.russia_wrapper > a.city-link.popuper")).click();
         }
     }
     @Override
